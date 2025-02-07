@@ -7,7 +7,9 @@ class Ckman < Formula
   sha256 "2b459ade67eef968ce1a7a64a80788a0e293434041ef3f0874d5163a84df6786"
   license "BSD-2-Clause"
 
-  depends_on "python3"
+  depends_on "swig" => :build
+  depends_on "cryptography"
+  depends_on "python@3.13"
 
   resource "cffi" do
     url "https://files.pythonhosted.org/packages/fc/97/c783634659c2920c3fc70419e3af40972dbaf758daa229a7d6ea6135c90d/cffi-1.17.1.tar.gz"
