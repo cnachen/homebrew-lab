@@ -1,4 +1,4 @@
-class CanokeyManager < Formula
+class Ckman < Formula
   include Language::Python::Virtualenv
 
   desc "Tool for managing your CanoKey configuration"
